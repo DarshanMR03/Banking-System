@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+nav {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    padding: 3rem 10rem;
+    justify-content: space-between;
+}
+
+.containe {
+    height: 100vh;
+}
+
+.containe img {
+    width: 100%;
+    position: absolute;
+    height: 110vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.main-title {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    font-size: 6rem;
+    transform: translate(-50%, -30%);
+}
+
+.content {
+    width: 95%;
+    background: rgb(24, 24, 24);
+    min-height: 90vh;
+    z-index: 2;
+    position: absolute;
+    background-image: #000;
+    background-size: cover;
+    padding-top: 100px;
+    left: 48px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.content-images {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 60vh;
+    text-align: center;
+}
+
+.text {
+    padding: 2rem 20rem;
+    font-size: 1.1rem;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: url(bg.png)no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: contain;
+}
+
+.container h2 {
+    z-index: 1;
+    position: relative;
+    color: #fff;
+    font-size: 120px;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 32px;
+    line-height: 100px;
+    animation: h2 2000ms infinite;
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), -0.025em -0.05em 0 rgba(0, 255, 0, 0.75), 0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+}
+
+@keyframes h2 {
+    0% {
+        text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), -0.05em -0.025em 0 rgba(0, 255, 0, 0.75), -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+    15% {
+        text-shadow: 0.05em -0.025em 0 rgba(255, 0, 0, 0.75), 0.025em 0.025em 0 rgba(0, 255, 0, 0.75), -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+    50% {
+        text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75), 0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+    100% {
+        text-shadow: -0.025em 0 0 rgba(255, 0, 0, 0.75), -0.025em -0.025em 0 rgba(0, 255, 0, 0.75), -0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+}
+
+.container h2 span {
+    font-size: 70px;
+    font-weight: 700;
+    letter-spacing: 10px;
+    padding-left: 150px;
+}
+
+.object {
+    position: relative;
+    top: -40px;
+}
+
+@media (max-width:800px) {
+    .container h2 {
+        font-size: 60px;
+        letter-spacing: 19px;
+        line-height: 35px;
+    }
+    .container h2 span {
+        font-size: 26px;
+    }
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.content-images ul li {
+    display: inline-block;
+}
+
+.img2 {
+    position: relative;
+    top: -35px;
+}
+
+.img3 {
+    position: relative;
+    top: -50px;
+    width: 300px;
+    height: 300px;
+}
+
+img {
+    border-radius: 20px;
+}
+
+.img1 {
+    position: relative;
+    top: -30px;
+}
+
+.img1:hover {
+    transform: scale(1.1);
+}
+
+.img2:hover {
+    transform: scale(1.1);
+}
+
+.img3:hover {
+    transform: scale(1.1);
+}
+
+.t {
+    z-index: 2;
+}
+
+h4 {
+    z-index: 2;
+    font-size: 20px;
+}
+
+h5 {
+    position: absolute;
+    color: grey;
+    left: 500px;
+    top: 600px;
+}

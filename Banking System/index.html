@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="width=device-width, initial-scale=1.0" />
+    <title>Spark Bank Home Page</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald:700|Poppins" rel="stylesheet" />
+</head>
+
+<body>
+    <nav>
+        <h4>Welcome Viewer</h4>
+        <a class="t" href="createuser.php">+ Add Customer</a>
+    </nav>
+    <section>
+        <div class="container">
+            <h2 class="object" data-value="3">Spark<br><span>Bank</span></h2>
+            <img src="7.png" class="object" data-value="-2" alt="">
+            <img src="18.png" class="object" data-value="6" alt="">
+            <img src="p1.png" class="object" data-value="2" alt="">
+            <img src="4.png" class="object" data-value="2" alt="">
+            <img src="6.png" class="object" data-value="2" alt="">
+
+        </div>
+
+
+        <script type="text/javascript">
+            document.addEventListener("mousemove", parallax);
+
+            function parallax(e) {
+                document.querySelectorAll(".object").forEach(function(move) {
+
+                    var moving_value = move.getAttribute("data-value");
+                    var x = (e.clientX * moving_value) / 250;
+                    var y = (e.clientY * moving_value) / 250;
+
+                    move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
+                });
+            }
+        </script>
+        <div class="content">
+            <div class="content-images">
+
+                <div>
+                    <img class="img1" src="user.jpg" alt="" />
+                    <br>
+                    <a href="allusers.php">Display Customers</a>
+                </div>
+
+
+                <div>
+                    <img class="img2" src="transfer.jpg" alt="" />
+                    <br>
+                    <a href="transfermoney.php">Transfer Amount</a>
+
+
+                </div>
+                <div>
+                    <img class="img3" src="transfer1.jpg" alt="" />
+                    <br>
+                    <a href="transactionhistory.php">Transfer History</a>
+                </div>
+
+            </div>
+            <h5>Made by Darshan MR,Nitte Meenakshi Institute of Technology(2021)</h5>
+        </div>
+
+    </section>
+    <script type="text/javascript">
+        document.addEventListener("mousemove", parallax);
+
+        function parallax(e) {
+            document.querySelectorAll(".object").forEach(function(move) {
+
+                var moving_value = move.getAttribute("data-value");
+                var x = (e.clientX * moving_value) / 250;
+                var y = (e.clientY * moving_value) / 250;
+
+                move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
+            });
+        }
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
